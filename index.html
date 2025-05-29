@@ -1,82 +1,298 @@
 <!DOCTYPE html>
-<html lang="fa">
-  <head>
-    <meta charset="UTF-8">
-    <title>رزومه امیررضا</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="controls">
-        <button class="btn" onclick="toggleDarkMode()">🌓 Dark Mood</button>
-      </div>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <h1> امیررضا نوری اوجور</h1>
-      <p><strong>توسعه‌دهنده فول‌استک (NestJS & React)</strong></p>
-      <p>📧 ایمیل: <a
-          href="mailto:amirrezwanoori@gmail.com">amirrezwanoori@gmail.com</a></p>
-      <p>💻 گیت‌هاب: <a href="https://github.com/amirrezwa"
-          target="_blank">github.com/amirrezwa</a></p>
+        <link rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-      <h2>درباره من</h2>
-      <p>برنامه‌نویس مشتاق با تمرکز روی بک‌اند (NestJS، Prisma، PostgreSQL) و
-        فرانت‌اند (ReactJS, VueJs, Quasar). عاشق یادگیری، پیاده‌سازی پروژه‌های
-        واقعی و دیزاین!</p>
+        <link rel="stylesheet" href="assets/css/style.css">
 
-      <h2>مهارت‌ها</h2>
-      <div class="badges">
-        <span>NodeJS</span>
-        <span>NestJS</span>
-        <span>html</span>
-        <span>css</span>
-        <span>JavaScript</span>
-        <span>TypeScript</span>
-        <span>ReactJs</span>
-        <span>VueJs</span>
-        <span>Quasar</span>
-        <span>Tailwind</span>
-        <span>Prisma</span>
-        <span>PostgreSQL</span>
-        <span>MongoDb</span>
-        <span>Jest</span>
-        <span>HTML/CSS</span>
-        <span>Git</span>
-        <span>Figma</span>
-      </div>
+        <link rel="shortcut icon" href="assets/images/favicon.png"
+            type="image/x-icon">
 
-      <h2>پروژه‌ها</h2>
-      <div class="project"><strong>Contact API (NestJS):</strong> پیاده‌سازی
-        کامل CRUD، احراز هویت، تست، فایل‌ها</div>
-      <div class="project"><strong>Invoice Manager (NestJs):</strong> شبیه‌ سازی
-        فاکتور فروش و تست نویسی</div>
-      <div class="project"><strong>Contact Controller (NestJs):</strong>
-        شبیه‌سازی Contct Controller و گذاشتن Role برای controller</div>
-      <div class="project"><strong>Covid Stats Site:</strong> نمایش آمار کرونا
-        از API با نمودار و جدول</div>
-      <div class="project"><strong>Tic Tac Toe (ReactJs):</strong> بازی تمرینی
-        برای درک React</div>
-      <div class="project"><strong>TodoList (ReactJs):</strong> برای درک بهتر
-        React</div>
-      <div class="project"><strong>WeatherApp (ReactJs):</strong> برای درک بهتر
-        React</div>
-      <div class="project"><strong>Traffic Light (ReactJs):</strong> شبیه‌سازی
-        چراغ راهنمایی با useEffect</div>
-      <div class="project"><strong>shoppingExample (tailwindCss):</strong>سایت
-        فروشگاهی با استفاده از TailwindCss</div>
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav id="header">
+                <div class="nav-logo">
+                    <p class="nav-name">AmirReza</p>
+                    <span>.</span>
+                </div>
+                <div class="nav-menu" id="myNavMenu">
+                    <ul class="nav_menu_list">
 
-      <h2>زبان‌ها</h2>
-      <ul>
-        <li>فارسی (مادری)</li>
-        <li>انگلیسی (خوب، درک داکیومنت)</li>
-      </ul>
-    </div>
+                        <li class="nav_list">
+                            <a href="#home"
+                                class="nav-link active-link">Home</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#about" class="nav-link">About</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#projects" class="nav-link">Projects</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#contact" class="nav-link">Contact</a>
+                            <div class="circle"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <button class="btn">Download CV <i
+                            class="uil uil-file-alt"></i></button>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
 
-    <script src="./index.js">
+            <main class="wrapper">
+                <section class="featured-box" id="home">
+                    <div class="featured-text">
+                        <div class="featured-text-card">
+                            <span>AmirReza Noori</span>
+                        </div>
+                        <div class="featured-name">
+                            <p>I'm <span class="typedText"></span></p>
+                        </div>
+                        <div class="featured-text-info">
+                            <p>Experienced frontend developer with a passion for
+                                creating visually stunning
+                                and user-friendly websites.
+                            </p>
+                        </div>
+                        <div class="featured-text-btn">
+                            <button class="btn blue-btn">Hire Me</button>
+                            <button class="btn">Download CV <i
+                                    class="uil uil-file-alt"></i></button>
+                        </div>
+                        <div class="social_icons">
+                            <a href="https://instagram.com/amirrezwanoori"
+                                target="_blank" class="icon">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/your_username"
+                                target="_blank" class="icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="mailto:amirrezwanoori@gmail.com"
+                                target="_blank" class="icon">
+                                <i class="uil uil-dribbble"></i>
+                            </a>
+                            <a href="https://github.com/amirrezwa"
+                                target="_blank" class="icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="featured-image">
+                        <div class="image">
+                            <img src="assets/images/avatar.png" alt="avatar">
+                        </div>
+                    </div>
+                    <div class="scroll-icon-box">
+                        <a href="#about" class="scroll-btn">
+                            <i class="uil uil-mouse-alt"></i>
+                            <p>Scroll Down</p>
+                        </a>
+                    </div>
 
-  </script>
-  </body>
+                </section>
+                <!-- -------------- ABOUT BOX ---------------- -->
+                <section class="section" id="about">
+                    <div class="top-header">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="about-info">
+                                <h3>My introduction</h3>
+                                <p>I am a front-end developer with a strong
+                                    foundation in HTML, CSS, and JavaScript, and
+                                    I enjoy bringing designs to life with clean,
+                                    interactive, and responsive user interfaces.
+                                    I have hands-on experience with modern
+                                    frameworks and libraries that help create
+                                    dynamic web experiences. In addition, I am
+                                    familiar with content management systems
+                                    like WordPress, which allows me to build and
+                                    customize websites efficiently based on
+                                    different project needs.
+                                </p>
+                                <div class="about-btn">
+                                    <button class="btn">Download CV <i
+                                            class="uil uil-import"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="skills-box">
+                                <div class="skills-header">
+                                    <h3>Frontend</h3>
+                                </div>
+                                <div class="skills-list">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Tailwind</span>
+                                    <span>JavaScript</span>
+                                    <span>TypeScript</span>
+                                    <span>ReactJs</span>
+                                    <span>NextJs</span>
+                                    <span>VueJs</span>
+                                    <span>Quasar</span>
+                                    <span>Figma</span>
+                                </div>
+                            </div>
+                            <div class="skills-box">
+                                <div class="skills-header">
+                                    <h3>Backend</h3>
+                                </div>
+                                <div class="skills-list">
+                                    <span>NodeJs</span>
+                                    <span>NestJs</span>
+                                    <span>LoopBack</span>
+                                    <span>Elysia</span>
+                                </div>
+                            </div>
+                            <div class="skills-box">
+                                <div class="skills-header">
+                                    <h3>Database</h3>
+                                </div>
+                                <div class="skills-list">
+                                    <span>PostgresSQL</span>
+                                    <span>Prisma</span>
+                                    <span>MongoDB</span>
+                                    <span>Jest</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- -------------- PROJECT BOX ---------------- -->
+
+                <section class="section" id="projects">
+                    <div class="top-header">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-box">
+                            <i class="uil uil-briefcase-alt"></i>
+                            <h3>Completed</h3>
+                            <label>10+ Finished Projects</label>
+                        </div>
+                        <div class="project-box">
+                            <i class="uil uil-users-alt"></i>
+                            <h3>Clients</h3>
+                            <label>25+ Happy Clients</label>
+                        </div>
+                        <div class="project-box">
+                            <i class="uil uil-award"></i>
+                            <h3>Experience</h3>
+                            <label>2+ Years in the field</label>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- -------------- CONTACT BOX ---------------- -->
+
+                <section class="section" id="contact">
+                    <div class="top-header">
+                        <h1>Get in touch</h1>
+                        <span>Do you have a project in your mind, contact me
+                            here</span>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="contact-info">
+                                <h2>Find Me <i
+                                        class="uil uil-corner-right-down"></i></h2>
+                                <p><i class="uil uil-envelope"></i> Email:
+                                    amirrezwanoori@gmail.com</p>
+                                <p><i class="uil uil-phone"></i> Tel: +98 901
+                                    514 5005</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-control">
+                                <div class="form-inputs">
+                                    <input type="text" class="input-field"
+                                        placeholder="Name">
+                                    <input type="text" class="input-field"
+                                        placeholder="Email">
+                                </div>
+                                <div class="text-area">
+                                    <textarea placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-button">
+                                    <button class="btn">Send <i
+                                            class="uil uil-message"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- --------------- FOOTER --------------- -->
+            <footer>
+                <div class="top-footer">
+                    <p>AmirReza .</p>
+                </div>
+                <div class="middle-footer">
+                    <ul class="footer-menu">
+                        <li class="footer_menu_list">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social-icons">
+                    <a href="https://instagram.com/amirrezwanoori"
+                        target="_blank" class="icon">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/your_username"
+                        target="_blank" class="icon">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="mailto:amirrezwanoori@gmail.com" target="_blank"
+                        class="icon">
+                        <i class="uil uil-dribbble"></i>
+                    </a>
+                    <a href="https://github.com/amirrezwa" target="_blank"
+                        class="icon">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+
+            </footer>
+
+        </div>
+
+        <!-- ----- TYPING JS Link ----- -->
+        <script
+            src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+        <!-- ----- SCROLL REVEAL JS Link----- -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- ----- MAIN JS ----- -->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
